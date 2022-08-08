@@ -1,0 +1,57 @@
+body{
+  background-color: orange;
+}
+.swiper {
+  width: 95%;
+  height: 500px;
+}
+.widthOfCard{
+  width: 70%;
+}
+
+.swiper-button-prev{
+  font-size: 100px !important;
+} 
+.skillBar, .skillPercentage{
+  height: 5px
+}
+.skillBar{
+  background-color: rgb(172, 128, 172);
+  
+}
+.skillPercentage{
+  background-color: rgb(247, 20, 247);
+}
+.skillHtml{
+  width:90%
+}
+.skillCss{
+  width:70%
+}
+.skillBootstrap{
+  width:80%
+}
+.skillJavascript{
+  width:70%
+}
+.skillReact{
+  width:2%
+}
+@media (min-width: 768px){
+  .swiper{
+    width: 80%;
+    height: 500px
+  }
+  .imageOfCard{
+    width:50% !important;
+    margin-right: 1rem;
+  }
+  :root{--swiper-navigation-size: 44px;}
+}
+@media (min-width: 1200px){
+  .swiper{
+    width: 60%;
+    height: 500px
+  }              
+}
+
