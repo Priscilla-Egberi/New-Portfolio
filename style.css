@@ -37,6 +37,32 @@ body{
 .skillReact{
   width:2%
 }
+.line-height{
+  line-height: .5;
+}
+.side-bar{
+  position: fixed;
+  top:0;
+  bottom:0;
+  right:0;
+  left:100%;
+  background:#fff;
+  color:black;
+  transition: 0.2s;
+}
+.openSidebar{
+ left:10%;
+ translate:ease-out;
+}
+ul{
+  list-style:none;
+  padding-left:0;
+}
+li{
+  text-decoration: none;
+  /* border-bottom: 2px solid rgb(97, 93, 93); */
+  padding-bottom: 4px;
+}
 @media (min-width: 768px){
   .swiper{
     width: 80%;
