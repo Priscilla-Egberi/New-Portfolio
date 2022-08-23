@@ -107,6 +107,13 @@ li{
 .w-95{
   width: 95%
 }
+.a{
+  text-decoration: none;
+  color: white !important
+}
+a{
+  text-decoration: none;
+}
 @media (min-width: 768px){
   .swiper{
     width: 80%;

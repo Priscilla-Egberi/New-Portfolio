@@ -23,10 +23,10 @@
       <div class="d-flex justify-content-end p-3">
         <i class="fa-solid fa-xmark" id="closeSidebar"></i>
       </div>
-      <ul>
-        <li class="text-dark link"> Log in</li>
-        <li class="text-dark link"> Features</li>
-        <li class="text-dark link"> Sign up</li>
+      <ul class="me-3">
+        <li class="text-dark link mb-3" id="closeSidebar2"><a href="#about"><strong> About me</strong></a></li>
+        <li class="text-dark link mb-3" id="closeSidebar3"><a href="#skills"><strong> Skills</strong></a></li>
+        <li class="text-dark link mb-3" id="closeSidebar4"><a href="#contact"><strong>Contact me</strong></a></li>
       </ul>
   
     </div>
@@ -45,12 +45,12 @@
   <h1>Hi, I am Priscilla</h1>
   <h5>A web developer</h5>
   <p>I have high level of experience in web design and web knowledge. I produce quality work</p>
-  <button class="btn">Contact me <i class="fa fa-angle-double-right ms-1" aria-hidden="true"></i></button>
+  <button class="btn"><a href="#contact" class="a">Contact me </a><i class="fa fa-angle-double-right ms-1" aria-hidden="true"></i></button>
 </div>
    
 <!-- About me -->
 <div class="mx-2">
-  <h1 class="text-center mt-5">About me</h1>
+  <h1 class="text-center mt-5"  id="about">About me</h1>
 <p class="text-center">My introduction</p>
 <img src="./images/My project (4).png" style="width:150px; height:fit-content" class="d-block mx-auto rounded div-image" alt="" srcset="">
 <p class="text-center">I am a web developer, with extensive knowledge and a year experience, I have worked on so many projects. And I deliver quality work</p>
@@ -68,12 +68,12 @@
     <p>company worked</p>
   </div>
 </div>
-<button class="btn d-block mx-auto">Download CV <i class="fa-solid fa-download ms-2"></i></button>
+<button class="btn d-block mx-auto" type="submit"><a href="filename.docx" class="a">Download CV <i class="fa-solid fa-download ms-2"></i></a></button>
 </div>
 
 <!-- Skills -->
 <div class="mx-2">
-  <h1 class="text-center mt-5">Skills</h1>
+  <h1 class="text-center mt-5" id="skills">Skills</h1>
 <p class="text-center">My technical Skills</p>
 <div> <i class="fa fa-eyedropper me-2" aria-hidden="true"></i> <span>Frontend Developer</span></div>
 <div class="ms-4">
@@ -127,7 +127,7 @@
         <div class="bodyOfCard pt-3">
           <h5>Love Computers</h5>
         <p>Don't you think you have a little robot in you.</p>
-        <button class="btn btn-primary">view</button>
+        <button class="btn">view</button>
         </div>
       </div>
     </div>
@@ -139,7 +139,7 @@
         <div class="bodyOfCard pt-3">
           <h5>Wanna Hack?</h5>
           <p>The Spirit of stealing is in you.</p>
-        <button class="btn btn-primary">view</button>
+        <button class="btn">view</button>
         </div>
       </div>
     </div>
@@ -151,7 +151,7 @@
         <div class="bodyOfCard pt-3">
           <h5>Back-end guy?</h5>
           <p>I know you love math and logic cos it gives you joy.</p>
-        <button class="btn btn-primary">view</button>
+        <button class="btn">view</button>
         </div>
       </div>
     </div>
@@ -169,7 +169,7 @@
 
 <!-- Contact Me -->
 <div class="mx-2">
-          <h1 class="text-center mt-5">Contact Me</h1>
+          <h1 class="text-center mt-5" id="contact">Contact Me</h1>
           <p class="text-center">Get in touch with me</p>
         <div class="line-height">
           <div class="d-flex mb-2">
@@ -203,7 +203,7 @@
           <div class="mb-2 mt-3">
             <textarea class="form-control p-1" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your Message here"></textarea>
           </div>
-          <button class="btn btn-primary">Send</button>
+          <button class="btn">Send</button>
 
         </div>
 </div>
@@ -233,6 +233,18 @@
       sidebar.classList.add('openSidebar');
 });
   document.getElementById('closeSidebar').addEventListener("click", function (){
+    const sidebar=document.getElementById('openSidebarHere');
+      sidebar.classList.remove('openSidebar');
+});
+  document.getElementById('closeSidebar2').addEventListener("click", function (){
+    const sidebar=document.getElementById('openSidebarHere');
+      sidebar.classList.remove('openSidebar');
+});
+  document.getElementById('closeSidebar3').addEventListener("click", function (){
+    const sidebar=document.getElementById('openSidebarHere');
+      sidebar.classList.remove('openSidebar');
+});
+  document.getElementById('closeSidebar4').addEventListener("click", function (){
     const sidebar=document.getElementById('openSidebarHere');
       sidebar.classList.remove('openSidebar');
 });
