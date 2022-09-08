@@ -26,7 +26,7 @@
       </div>
       <ul class="me-3">
         <li class="text-dark link mb-3" id="closeSidebar2"><a href="#about"><strong> About me</strong></a></li>
-        <li class="text-dark link mb-3" id="closeSidebar2"><a href="#portfolio"><strong> Portfolio</strong></a></li>
+        <li class="text-dark link mb-3" id="closeSidebar5"><a href="#portfolio"><strong> Portfolio</strong></a></li>
         <li class="text-dark link mb-3" id="closeSidebar3"><a href="#skills"><strong> Skills</strong></a></li>
         <li class="text-dark link mb-3" id="closeSidebar4"><a href="#contact"><strong>Contact me</strong></a></li>
       </ul>
@@ -36,46 +36,76 @@
 </div>
 
 <!-- HomePage -->
-<div class="d-flex mt-5" style="width:95%">
-  <div class="d-flex flex-column justify-content-between py-4 ms-3 me-5  click-icons" style="font-size:1rem ">
-    <i class="fa-brands fa-linkedin-in"></i>
-    <i class="fa-brands fa-dribbble"></i>
-    <i class="fa-brands fa-github"></i>
+<div class="container">
+  <div class="d-flex mt-5 d-md-none" style="width:95%">
+    <!-- icons -->
+    <div class="d-flex flex-column justify-content-between py-4 ms-3 me-5" style="font-size:1rem ">
+      <a href="https://github.com/Priscilla-Egberi" class=" click-icons"><i class="fa-brands fa-github click-icons"></i></a>
+      <a href="#" class="click-icons"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#" class=" click-icons"><i class="fa-brands fa-dribbble"></i></a>
+    </div>
+    <!-- image -->
+    <div class="px-2 pt-2 div-image" ><img src="./images/My project (3).png" style="width:150px; height:fit-content; "  alt="" srcset=""> </div>
   </div>
-  <div class="px-2 pt-2 div-image" ><img src="./images/My project (3).png" style="width:150px; height:fit-content; "  alt="" srcset=""> </div>
+  <!-- body of homepage -->
+  <div class="ms-3 d-md-none">
+    <h1>Hi, I am Priscilla</h1>
+    <h5>A web developer</h5>
+    <p>I have high level of experience in web design and web knowledge. I produce quality work</p>
+    <button class="btn"><a href="#contact" class="a">Contact me </a><i class="fa fa-angle-double-right ms-1" aria-hidden="true"></i></button>
+  </div>
+  <!-- at medium screen -->
+  <div class="pt-5 d-none d-md-flex">
+    <!-- icons -->
+    <div class="d-flex flex-column justify-content-between py-4 ms-3 me-5" style="font-size:1rem ">
+      <a href="https://github.com/Priscilla-Egberi" class=" click-icons"><i class="fa-brands fa-github click-icons"></i></a>
+      <a href="#" class="click-icons"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="#" class=" click-icons"><i class="fa-brands fa-dribbble"></i></a>
+    </div>
+     <!-- body of homepage -->
+  <div class="ms-3 w-50">
+    <h1>Hi, I am Priscilla</h1>
+    <h5>A web developer</h5>
+    <p class="mb-0">I have high level of experience in web design and web knowledge. </p><p>I produce quality work</p>
+    <button class="btn"><a href="#contact" class="a">Contact me </a><i class="fa fa-angle-double-right ms-1" aria-hidden="true"></i></button>
+  </div>
+  <!-- image -->
+  <div class="px-2 pt-2 div-image ms-2 rounded" ><img src="./images/My project (3).png" style="width:150px; height:fit-content; "  alt="" srcset=""> </div>
+  </div>
+     
 </div>
-<div class="ms-3">
-  <h1>Hi, I am Priscilla</h1>
-  <h5>A web developer</h5>
-  <p>I have high level of experience in web design and web knowledge. I produce quality work</p>
-  <button class="btn"><a href="#contact" class="a">Contact me </a><i class="fa fa-angle-double-right ms-1" aria-hidden="true"></i></button>
-</div>
-   
+
 <!-- About me -->
-<div class="mx-2">
+<div class="container">
   <h1 class="text-center mt-5 pt-5"  id="about">About me</h1>
 <p class="text-center">My introduction</p>
-<img src="./images/My project (4).png" style="width:150px; height:fit-content" class="d-block mx-auto rounded div-image" alt="" srcset="">
-<p class="text-center">I am a web developer, with extensive knowledge and a year experience, I have worked on so many projects. And I deliver quality work</p>
-<div class="d-flex justify-contents-around">
-  <div class="text-center">
-    <span>1+</span>
-    <p>years experience</p>
+<div class="d-flex flex-column flex-md-row">
+  <img src="./images/My project (4).png" style="width:150px; height:fit-content" class="d-block mx-auto mx-md-1 rounded div-image me-md-5" alt="" srcset="">
+  <div class="w-md-50">
+    <p class="text-center">I am a web developer, with extensive knowledge and a year experience, I have worked on so many projects. And I deliver quality work</p>
+    <div class="d-flex justify-content-between ">
+      <div class="text-center">
+        <span>1+</span>
+        <p>years experience</p>
+      </div>
+      <div class="text-center">
+        <span>5+</span>
+        <p>completed projects</p>
+      </div>
+      <div class="text-center">
+        <span>1+</span>
+        <p>company worked</p>
+      </div>
+    </div>
+    <button class="btn d-block mx-auto" type="submit"><a href="myCV.docx" class="a">Download CV <i class="fa-solid fa-download ms-2"></i></a></button>
   </div>
-  <div class="text-center">
-    <span>5+</span>
-    <p>completed projects</p>
-  </div>
-  <div class="text-center">
-    <span>1+</span>
-    <p>company worked</p>
-  </div>
+  
 </div>
-<button class="btn d-block mx-auto" type="submit"><a href="myCV.docx" class="a">Download CV <i class="fa-solid fa-download ms-2"></i></a></button>
+
 </div>
 
 <!-- Skills -->
-<div class="mx-2 pt-5" id="skills">
+<div class="container pt-5 w-md-50" id="skills">
   <h1 class="text-center " >Skills</h1>
 <p class="text-center">My technical Skills</p>
 <div> <i class="fa fa-eyedropper me-2" aria-hidden="true"></i> <span>Frontend Developer</span></div>
@@ -147,7 +177,7 @@
         <div class="bodyOfCard pt-3">
           <h5>Facebook replica</h5>
           <p>Designed a facebook page. Only like and comment buttons are working</p>
-        <button class="btn"><a href="https://serene-queijadas-d3421a.netlify.app" class="a">view</a></button>
+        <button class="btn"><a href="https://6306233da1bc7f132f7fc688--serene-queijadas-d3421a.netlify.app" class="a">view</a></button>
         </div>
       </div>
     </div>
@@ -159,7 +189,7 @@
         <div class="bodyOfCard pt-3">
           <h5>A company website</h5>
           <p>A company website that shows the affairs of the company</p>
-        <button class="btn"><a href="https://serene-queijadas-d3421a.netlify.app/" class="a">view</a></button>
+        <button class="btn"><a href="https://630624a5e2a15812dfbae5eb--serene-queijadas-d3421a.netlify.app/" class="a">view</a></button>
         </div>
       </div>
     </div>
@@ -176,10 +206,11 @@
 </div>
 
 <!-- Contact Me -->
-<div class="mx-2 ">
-          <h1 class="text-center mt-5" id="contact">Contact Me</h1>
-          <p class="text-center">Get in touch with me</p>
-        <div class="line-height">
+<h1 class="text-center mt-5 pt-5" id="contact">Contact Me</h1>
+        <p class="text-center mb-5">Get in touch with me</p>
+<div class="container mb-5 d-md-flex">
+  <div w-md-50>
+           <div class="line-height">
           <div class="d-flex mb-2">
             <i class="fa-solid fa-location-dot me-3 fa-2x"></i> 
             <div >
@@ -202,8 +233,10 @@
             </div>
           </div>
         </div>
+  </div>
+          
 
-        <div class="w-95 rounded mx-auto" >
+        <div class="w-95 w-md-50 rounded mx-auto" >
           <h5 class="">Send Me a Message</h5>
           <input type="text" placeholder="Full Name" class="p-2 w-100 border-0 rounded">
           <input type="email" placeholder="Email" class="p-2 w-100 border-0 mt-3 rounded">
@@ -211,7 +244,9 @@
           <div class="mb-2 mt-3 textarea">
             <textarea class="form-control p-1" id="exampleFormControlTextarea1" rows="3" placeholder="Enter your Message here"></textarea>
           </div>
-          <button class="btn">Send</button>
+          <button class="btn" id="send">Send</button>
+        
+
 
         </div>
 </div>
@@ -255,6 +290,13 @@
   document.getElementById('closeSidebar4').addEventListener("click", function (){
     const sidebar=document.getElementById('openSidebarHere');
       sidebar.classList.remove('openSidebar');
+});
+  document.getElementById('closeSidebar5').addEventListener("click", function (){
+    const sidebar=document.getElementById('openSidebarHere');
+      sidebar.classList.remove('openSidebar');
+});
+  document.getElementById('send').addEventListener("click", function (){
+    alert("Message sent")
 });
 
 </script>
